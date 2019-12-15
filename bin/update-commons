@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -eu
+
+git submodule add https://github.com/ha4gu/docker-rails-commons submodules/commons
+rsync -av submodules/commons/. ./. --exclude ".git"
