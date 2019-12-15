@@ -15,6 +15,7 @@ gem "webpacker", "~> 4.0"
 group :development, :test do
   gem "byebug"
   gem "factory_bot_rails"
+  gem "faker"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.9"
