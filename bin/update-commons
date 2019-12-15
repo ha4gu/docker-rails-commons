@@ -2,5 +2,5 @@
 
 set -eu
 
-git submodule add https://github.com/ha4gu/docker-rails-commons submodules/commons
+git submodule update --remote submodules/commons/
 rsync -av submodules/commons/. ./. --exclude ".git"
