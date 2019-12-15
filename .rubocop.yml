@@ -1,0 +1,53 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+inherit_from:
+  - https://raw.githubusercontent.com/thoughtbot/guides/master/style/ruby/.rubocop.yml
+
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - "tmp/**/*"
+    - "config/initializers/*"
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "node_modules/**/*"
+    - "db/migrate/*.rb"
+    - "bin/*"
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - spec/**/* # copied from the file inherit from
+
+Metrics/LineLength:
+  Exclude:
+    - app/jobs/application_job.rb
+    - config/application.rb
+    - config/environments/**/*
+    - config/puma.rb
+    - config/routes.rb
+    - db/seeds.rb
+    - Gemfile
+    - Rakefile
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*
+
+RSpec/ExampleLength:
+  Exclude:
+    - spec/features/**/*
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/features/**/*
+
+Style/TrailingCommaInHashLiteral:
+  Exclude:
+    - config/environments/*.rb
