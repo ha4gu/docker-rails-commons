@@ -16,6 +16,11 @@ group :development, :test do
   gem "byebug"
   gem "pry-byebug"
   gem "pry-rails"
+  gem "rspec-rails", "~> 3.9"
+  gem "rubocop", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
 end
 
 group :development do
@@ -23,4 +28,11 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+end
+
+group :test do
+  gem "capybara"
+  gem "capybara-screenshot"
+  gem "selenium-webdriver"
+  gem "shoulda-matchers"
 end
