@@ -6,7 +6,7 @@ ruby "2.6.5"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "image_processing", "~> 1.2"
 gem "pg", ">= 0.18", "< 2.0"
-gem "puma", "~> 4.1"
+gem "puma", "~> 4.3"
 gem "rails", "~> 6.0.2"
 gem "rails-i18n", "~> 6.0.0"
 gem "rails_admin", "~> 2.0", git: "https://github.com/sferik/rails_admin.git"
